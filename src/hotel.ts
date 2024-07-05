@@ -37,7 +37,6 @@ export class Hotel {
     }
 
     getAvailableRooms(checkIn: string, checkOut: string): number[] {
-        // Implementa la lógica para obtener habitaciones disponibles
         return [];
     }
 
@@ -47,7 +46,6 @@ export class Hotel {
     }
 
     isRoomAvailable(roomNumber: number, checkIn: string, checkOut: string): boolean {
-        // Implementa la lógica para verificar la disponibilidad de la habitación
         return true;
     }
 }
