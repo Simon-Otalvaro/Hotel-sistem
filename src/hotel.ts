@@ -1,4 +1,3 @@
-// src/hotel.ts
 import { Reserva } from './reserva';
 
 export class Hotel {

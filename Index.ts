@@ -4,7 +4,7 @@ import { Reserva } from './src/reserva';
 function mainMenu() {
     const hotel = new Hotel();
 
-    console.log("Bienvenido al sistema de gestión de hotel.");
+    console.log("Bienvenido al interfaz del hotel!!!");
 
     let choice = 0;
     while (choice !== 6) {
