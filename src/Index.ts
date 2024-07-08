@@ -1,5 +1,5 @@
-import { Hotel } from './src/hotel';
-import { Reserva } from './src/reserva';
+import { Hotel } from './models/hotel';
+import { Reserva } from './models/reserva';
 
 function mainMenu() {
     const hotel = new Hotel();
@@ -26,7 +26,7 @@ function mainMenu() {
                     const reserva = hotel.searchReserva(id);
                     console.log("Reservación encontrada:", reserva);
                 } catch (error) {
-                    console.error(error.message);
+                    console.log()
                 }
                 break;
             case 2:
@@ -45,7 +45,7 @@ function mainMenu() {
                     hotel.addReserva(newReserva);
                     console.log("Nueva reservación agregada:", newReserva);
                 } catch (error) {
-                    console.error(error.message);
+                    console.log()
                 }
                 break;
             case 4:
@@ -54,7 +54,7 @@ function mainMenu() {
                     const removedReserva = hotel.removeReserva(idToRemove);
                     console.log("Reservación eliminada:", removedReserva);
                 } catch (error) {
-                    console.error(error.message);
+                   
                 }
                 break;
             case 5:
