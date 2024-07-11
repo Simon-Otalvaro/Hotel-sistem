@@ -1,5 +1,8 @@
 import { Hotel } from './models/hotel';
 import { Reserva } from './models/reserva';
+import promptSync from 'prompt-sync';
+
+const prompt = promptSync();
 
 function mainMenu() {
     const hotel = new Hotel();
@@ -38,8 +41,8 @@ function mainMenu() {
                     const newReserva = new Reserva(
                         parseInt(prompt("Ingrese el ID de la nueva reservación:") || '0'),
                         prompt("Ingrese el nombre:") || '',
-                        prompt("Ingrese la fecha de check-in (dd/mm):") || '',
-                        prompt("Ingrese la fecha de check-out (dd/mm):") || '',
+                        prompt("Ingrese la fecha de entrada (dd/mm):") || '',
+                        prompt("Ingrese la fecha de salida (dd/mm):") || '',
                         parseInt(prompt("Ingrese el número de habitación:") || '0')
                     );
                     hotel.addReserva(newReserva);
